@@ -15,11 +15,17 @@
 </script>
 
 <svelte:head>
-	<title>About</title>
+	<title>Über Mich</title>
 </svelte:head>
 
 <div class="content">
 	<h1>Über mich</h1>
+
+	<p>
+		Ich bin Ronja Wagner und studiere aktuell IT-Systems Engineering am Hasso-Plattner-Institut in Potsdam.
+	</p>
+
+	<p> <br></p>
 
 	<p>
 		Diese Seite ist noch in Arbeit. Bald sind hier viele spannende Dinge zu finden.
