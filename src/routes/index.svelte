@@ -13,7 +13,7 @@
 
 <section>
 	<div class="welcome">
-	<img src="static\portrait.png" alt=""></div>
+	<img src="/portrait.png" alt=""></div>
 	<div class="hello"><h1>HALLO!</h1></div>
 
 	<h2 class="subtitle">
@@ -23,9 +23,9 @@
 		Hier sind ein paar Dinge, mit denen ich mich beschäftige:
 	</h2>
 	<div class="container">
-		<LinkImage title="Stilisierung von 3D-Punktwolken" link="/aboutMe" src="static/pointcloud.png"/>
-		<LinkImage title="Skizzen und Lichtstudien" link="/aboutMe" src="static/light_study.png"/>
-		<LinkImage title="Zeichenserie bekannter Informatikerinnen" link="/aboutMe" src="static/wit.png"/>
+		<LinkImage title="Stilisierung von 3D-Punktwolken" link="/aboutMe" src="/pointcloud.png"/>
+		<LinkImage title="Skizzen und Lichtstudien" link="/aboutMe" src="/light_study.png"/>
+		<LinkImage title="Zeichenserie bekannter Informatikerinnen" link="/aboutMe" src="/wit.png"/>
 	</div>
 
 </section>
