@@ -4,6 +4,7 @@
 
 <script lang="ts">
 	import Counter from '$lib/Counter.svelte';
+	import LinkImage from '$lib/LinkImage.svelte';
 </script>
 
 <svelte:head>
@@ -11,48 +12,72 @@
 </svelte:head>
 
 <section>
-	<h1>
-		<div class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</div>
+	<div class="welcome">
+	<img src="static\portrait.png" alt=""></div>
+	<div class="hello"><h1>HALLO!</h1></div>
 
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
+	<h2 class="subtitle">
+		ich bin <strong>Ronja</strong>, Informatik-Studentin und Zeichnerin
 	</h2>
+	<h2 style="margin-top: 4rem">
+		Hier sind ein paar Dinge, mit denen ich mich beschäftige:
+	</h2>
+	<div class="container">
+		<LinkImage title="Stilisierung von 3D-Punktwolken" link="/aboutMe" src="static/pointcloud.png"/>
+		<LinkImage title="Skizzen und Lichtstudien" link="/aboutMe" src="static/light_study.png"/>
+		<LinkImage title="Zeichenserie bekannter Informatikerinnen" link="/aboutMe" src="static/wit.png"/>
+	</div>
 
-	<Counter />
 </section>
 
 <style>
+	.container{
+		padding:2rem;
+		width: 90vw;
+		padding-top:1rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+
 	section {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		flex: 1;
+		margin-top:5rem;
 	}
 
 	h1 {
 		width: 100%;
+		margin:0 0;
+		font-size: min(15vw, 200px);
+		margin-right: max(-6vw,-100px);
+		letter-spacing: min(6vw,100px);
+		text-shadow: 0 0 min(4vw, 50px) var(--tertiary-color),0 0 min(4vw, 50px) var(--tertiary-color);
+		
+	}
+	.subtitle {
+		font-size: min(max(4vw, 2.25rem),4rem);
+	}
+	.hello {
+		max-width: 1500px;
+		position:relative;
+		align-content: center;
 	}
 
 	.welcome {
 		position: relative;
 		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
+		height: min(45vw,23rem);
+		z-index: -1;
+		/*padding: 0 0 calc(100% * 495 / 2048) 0;*/
 	}
 
 	.welcome img {
-		position: absolute;
+		position: relative;
 		width: 100%;
-		height: 100%;
 		top: 0;
 		display: block;
 	}
